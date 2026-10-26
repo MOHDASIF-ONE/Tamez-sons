@@ -11,7 +11,9 @@ pnpm install --frozen-lockfile
 pnpm dev --hostname 127.0.0.1
 ```
 
-Open **http://127.0.0.1:3000/**. Development uses `.next/`; production builds and `pnpm start` use `.next-production/` so the running preview and production artifacts remain separate. Automatic output cleanup is disabled inside this Windows OneDrive workspace because its cloud directory placeholders interfere with Next.js cleanup.
+Open **http://127.0.0.1:3000/**. Development uses `.next/`. Inside a Windows OneDrive workspace, production builds and `pnpm start` use `.next-production/` so the running preview and production artifacts remain separate. Automatic output cleanup is also disabled there because cloud directory placeholders interfere with Next.js cleanup. Other environments, including Vercel, use the standard `.next/` production output.
+
+For Vercel, use the **Next.js** framework preset, the repository root, `pnpm run build`, and the default `.next` output directory. The separate `apps/api` workspace is not the website's deployment root.
 
 ## Motion
 

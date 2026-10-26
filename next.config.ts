@@ -17,7 +17,10 @@ export default function config(phase: string): NextConfig {
     ...nextConfig,
     // OneDrive cloud directories can be misclassified during Next's cache cleanup.
     cleanDistDir: !oneDriveWorkspace,
-    // Keep production artifacts separate from the running preview and its old cache.
-    distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next" : ".next-production",
+    // Isolate local OneDrive builds; hosting adapters expect the standard .next output.
+    distDir:
+      oneDriveWorkspace && phase !== PHASE_DEVELOPMENT_SERVER
+        ? ".next-production"
+        : ".next",
   };
 }
