@@ -1,0 +1,21 @@
+Ferrari 458 Italia
+Author: vicent091036
+Original: https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Distributed by the official Three.js examples, release r186:
+https://github.com/mrdoob/three.js/blob/r186/examples/models/gltf/ferrari.glb
+Official author credit:
+https://github.com/mrdoob/three.js/blob/r186/examples/webgl_materials_car.html
+Adaptations: studio materials, dark interior trim, wheel/brake separation, isolated original bonnet with hinge motion and moving front crest, illustrative front compartment and support struts, pointer and scroll motion.
+The vehicle is an illustrative study and does not imply an affiliation or service specialization.
+
+Venice Sunset HDR environment: Greg Zaal / Poly Haven, CC0.
+https://polyhaven.com/a/venice_sunset
+Vendored from Three.js r186 examples/textures/equirectangular/venice_sunset_1k.hdr
+
+Draco glTF decoder: Google Draco / Three.js distribution, Apache License 2.0.
+https://github.com/google/draco
+https://www.apache.org/licenses/LICENSE-2.0
+
+Brake, piston and suspension assemblies are original procedural illustrations.
